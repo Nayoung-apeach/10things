@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+
+  <meta name="author" content="Yoga friends">
+
+  <meta name="keywords" content="입맛 테스트, 내 입맛을 알아보는 10가지 질문, 2분테스트, 이미지테스트">
+  <meta name="description" content="내 입맛을 알아보는 10가지 질문">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="내 입맛을 알아보는 10가지 질문">
+  <meta property="og:description" content="나는 무슨음식을 좋아할까?">
+  <meta property="og:image" content="img/og-logo.jpg">
+ <meta property="og:url" content=""> <!--  우리가 호스팅 해서 올리기 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="shortcut icon" type="text/css" href="img/favicon.png">
+  <link rel="appel-touch-icon-precomposed" href="img/favicon.png">
+  <title>
+    나를 알아보는 10가지 질문
+  </title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header+footer.css">
+  <link rel="stylesheet" href="css/welcome.css">
+  <link rel="stylesheet" href="css/qna.css">
+  <link rel="stylesheet" href="css/calc.css">
+  <link rel="stylesheet" href="css/result.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <button class="logo head" onclick=javascript:switchMode()></button>
+    </header>
+    <section id="welcome" class="container">
+      <div id="title-box">
+        <h1 class="title">
+          My Favorite Food<br>
+          Knowing Through Questions
+        </h1>
+
+        <h3 class="sec-tit">
+          입맛 찾아<br>
+          신사리
+        </h3>
+        <span class="time-logo"></span>
+        <div>약 2분 소요</div>
+      </div>
+      <hr class="w-line">
+      <p class="w-line">
+        <span id="p-tit">잘 찾아오셨습니다 여러분!</span><br>
+        무엇을 먹을지 내가 좋아하는 음식이 무엇인지 고민하신다구요?<br>
+        다른 고민 하기에도 바쁜 요즘같은 사회에서 여러분의 음식 고민은 덜어드리고자
+        저희가 재밌는 테스트를 만들어보았습니다!!
+        그럼 여러분 지금부터 즐겨주세요!
+      </p>
+      <hr class="w-line">
+      <div id="name-input">
+        <input type="text" placeholder="닉네임을 입력해주세요" autofocus>
+      </div>
+      <p class="check-name warning"></p>
+      <div class="start-wrap">
+        <button class="start">SINSARI GO</button>
+      </div>
+    </section>
+    <section id="qna" class="container">
+      <div class="status-bar">
+        <div class="status"></div>
+      </div>
+      <div class="q box"></div>
+      <div class="answer"></div>
+    </section>
+    <section id="calc">
+      <div class="calc-bar">
+        TASTE🍕🍔🍟🥨🥙🍙🍲
+        <div class="calc"></div>
+      </div>
+      <p class="wait">잠시 기다려주세요...</p>
+    </section>
+    <section id="result" class="container">
+      <div id="score-box">
+        <div class="p title"></div>
+        <div class="point"></div>
+        <div class="pin"></div>
+        <div class="score-bar"></div>
+      </div>
+      <div id="desc-box">
+        <div class="art"></div>
+        <div class="result title"></div>
+        <div class="res desc"></div>
+        <span class="go-artist highlight" onclick=javascript:goArtist()>
+          추천드린 음식이 마음에 드시나요?
+        </span>
+      </div>
+      <hr>
+      <p>친구들과 공유하기</p>
+      <div class="hash">#SRS #2분음식테스트 #별빛신사리</div>
+      <div id="share-box">
+        <a onclick=javascript:fb() target="_blank" alt="Share on Facebook" title="페이스북에 공유하기">
+          <span class="fb"></span>
+        </a>
+        <a onclick=javascript:nv() target="_blank" alt="Share on Naver" title="네이버에 공유하기">
+          <span class="nv"></span>
+        </a>
+        <a onclick=javascript:band() target="_blank" alt="Share on Naver Band" title="네이버 밴드에 공유하기">
+          <span class="band"></span>
+        </a>
+      </div>
+      <button onclick=javascript:copy() class="btn">링크 복사하기</button>
+      
+    <footer id="footer">
+      <div>
+        <span class="highlight">YOGA FRIENDS</span>
+        © 2020
+      </div>
+      <a href="https://github.com/Nayoung-apeach" target=_blank title="개발자 깃허브">
+        <div class="logo foot github"></div>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100011798887149" target=_blank title="개발자 페이스북">
+        <div class="logo foot tistory"></div>
+      </a>
+    </footer>
+  </div>
+  <script src="js/darkmode.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/share.js"></script>
+</body>
+
+</html>

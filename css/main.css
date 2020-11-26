@@ -1,0 +1,58 @@
+/* style */
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eafffc+0,f0e8ff+100 */
+  background: #eafffc; /* Old browsers */
+  background: -moz-linear-gradient(left, #2ba55e  0%, #bed690 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #2ba55e 0%,#bed690 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #2ba55e 0%,#bed690 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eafffc', endColorstr='#f0e8ff',GradientType=1 ); /* IE6-9 */
+}
+#wrap {
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 0 25px 0;
+  width: 100%;
+  min-width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  /* qna에서 margin-top을 없애야 함 */
+  #wrap {
+    margin-top: 115px;
+  }
+  .container {
+    padding: 60px 5% 37.5px 5%;
+    width: 80%;
+    min-width: 80%;
+    border-radius: 20px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  /* qna에서 margin-top을 없애야 함 */
+  #wrap {
+    margin-top: 150px;
+  }
+  .container {
+    padding: 100px 5% 40px 5%;
+    width: 70%;
+    min-width: 70%;
+    border-radius: 30px;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .container {
+    padding: 100px 3.5% 50px 3.5%;
+    width: 55%;
+    min-width: 55%;
+  }
+}
